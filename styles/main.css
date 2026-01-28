@@ -1,34 +1,34 @@
 /* Paleta de colores */
 
-html{
+html {
     --colorPrimario: #473472;
     --colorSecundario: #53629E;
     --colorTerciario: #87BAC3;
     --colorCuaternario: #D6F4ED;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-body{
+body {
     font-family: "Oswald", sans-serif;
 }
 
 /* Navbar */
 
-header{
+header {
     display: flex;
     justify-content: center;
-    position: fixed; 
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
 }
 
-#navbar{
+#navbar {
     height: 15vh;
     width: 80vw;
     display: flex;
@@ -39,7 +39,7 @@ header{
     margin-top: 2vh;
 }
 
-.img-container{
+.img-container {
     height: 80%;
     margin-left: 3vw;
     width: 30%;
@@ -47,32 +47,33 @@ header{
     justify-content: flex-start;
 }
 
-.img{
+.img {
     height: 100%;
 }
 
-.img:hover{
+.img:hover {
     transform: scale(1.01);
 }
 
-.links-container{
+.links-container {
     width: 70%;
     display: flex;
     justify-content: space-between;
     margin-right: 3vw;
 }
 
-.link{
+.link {
     text-decoration: none;
     color: black;
     font-weight: 600;
 }
-.link:hover{
+
+.link:hover {
     transform: scale(1.05);
     color: rgba(0, 0, 0, 0.651);
 }
 
-.link:active{
+.link:active {
     transform: scale(.9);
     color: rgba(0, 0, 0, 0.401);
 }
@@ -105,6 +106,7 @@ main {
 }
 
 .boton {
+    margin-top: 10px;
     font-family: 'Arial', sans-serif;
     display: inline-block;
     background-color: var(--colorTerciario);
@@ -116,21 +118,28 @@ main {
 }
 
 .boton:hover {
-    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .asesoramiento {
     background-color: var(--colorCuaternario);
     text-align: center;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
 
+.asesoramiento h2 {
+    margin: 50px;
+    font-size: 28px;
 }
 
 .servicios {
     font-family: 'Arial', sans-serif;
-    background-color: aliceblue;
+    background-color: var(--colorSecundario);
     font-size: 18px;
     padding: 50px 0;
 }
+
 .servicios h2 {
     text-align: center;
 }
@@ -140,38 +149,69 @@ main {
     line-height: 1.6;
 }
 
-.seccion-imagenes {
+.tarjetas-servicios {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 100px;
 }
 
-.imagen-objeto {
-  text-align: center;
-}
-
-.imagen-objeto img {
-  width: 300px;
-  height: 300px;
-  object-fit: contain;
-}
-
-.texto-imagen {
-  margin-top: 10px;
-  font-size: 16px;
-  font-weight: 500;
-  color: #333;
-}
-
-.asesoramiento {
-    font-family: 'Arial', sans-serif;
+.tarjeta {
+    width: 300px;
     text-align: center;
+    padding-bottom: 16px;
 }
+
+.tarjeta img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.tarjeta h3 {
+    margin: 12px 0 8px;
+    font-size: 18px;
+    color: var(--colorPrimario);
+    font-family: 'Arial', sans-serif;
+}
+
+.tarjeta p {
+    font-family: 'Arial', sans-serif;
+    padding: 0 12px;
+    font-size: 14px;
+    color: var(--colorPrimario);
+}
+
 
 /* Acerca de nosotros */
+.contenedor-acerca {
+    background-color: var(--colorCuaternario);
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 4rem 8%;
+    gap: 30px;
+}
 
+.por-que-nosotros {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--colorSecundario);
 
+}
+
+.por-que-nosotros h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 28px;
+}
+
+.por-que-nosotros p {
+    margin: 20px auto;
+    max-width: 600px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    font-size: 20px;
+}
 
 /* Contacto */
-
-
