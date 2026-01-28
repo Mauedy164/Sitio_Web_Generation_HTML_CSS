@@ -8,8 +8,95 @@ html{
 }
 
 /* Inicio */
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
+.contenedor-principal {
+    background-color: var(--colorCuaternario);
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 4rem 8%;
+    gap: 30px;
+}
 
+.descripcion {
+    max-width: 600px;
+}
+
+.texto-descripcion {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.boton {
+    font-family: 'Arial', sans-serif;
+    display: inline-block;
+    background-color: var(--colorTerciario);
+    color: var(--colorSecundario);
+    border-radius: 25px;
+    padding: 14px 32px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.boton:hover {
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.asesoramiento {
+    background-color: var(--colorCuaternario);
+    text-align: center;
+
+}
+
+.servicios {
+    font-family: 'Arial', sans-serif;
+    background-color: aliceblue;
+    font-size: 18px;
+    padding: 50px 0;
+}
+.servicios h2 {
+    text-align: center;
+}
+
+.servicios p {
+    text-align: center;
+    line-height: 1.6;
+}
+
+.seccion-imagenes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.imagen-objeto {
+  text-align: center;
+}
+
+.imagen-objeto img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+
+.texto-imagen {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.asesoramiento {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
 
 /* Acerca de nosotros */
 
