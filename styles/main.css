@@ -215,3 +215,27 @@ main {
 }
 
 /* Contacto */
+
+/* Footer */
+
+
+div.contacto {
+    background-color: var(--colorTerciario);
+    color: var(--colorSecundario);
+    padding: 2px 20px 2px 20px;
+}
+
+div.container {
+    background-color: var(--colorCuaternario);
+    color: var(--colorTerciario);
+    border-top: 1px solid #473472;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing:content-box;
+}
+
+.redes svg {
+    width: 24px;
+    height: 24px;
+}
