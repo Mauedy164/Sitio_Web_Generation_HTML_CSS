@@ -7,6 +7,63 @@ html{
     --colorCuaternario: #D6F4ED;
 }
 
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Oswald", sans-serif;
+}
+
+/* Navbar */
+
+#navbar{
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--colorCuaternario);
+}
+
+.img-container{
+    height: 90%;
+    margin-left: 1vw;
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.img{
+    height: 100%;
+}
+
+.img:hover{
+    transform: scale(1.01);
+}
+
+.links-container{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20vw;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.link:hover{
+    transform: scale(1.05);
+    color: rgba(0, 0, 0, 0.651);
+}
+
+.link:active{
+    transform: scale(.9);
+    color: rgba(0, 0, 0, 0.401);
+}
+
 /* Inicio */
 
 
